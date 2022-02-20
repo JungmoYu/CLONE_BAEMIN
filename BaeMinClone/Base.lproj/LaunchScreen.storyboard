@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,10 +13,30 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="런치스크린" translatesAutoresizingMaskIntoConstraints="NO" id="3sK-VF-M2k">
+                                <rect key="frame" x="83" y="383" width="248" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="8XZ-HE-mE3"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="런치스크린_우아한형제들" translatesAutoresizingMaskIntoConstraints="NO" id="ZdX-HA-Qho">
+                                <rect key="frame" x="169.5" y="813" width="75" height="39"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZdX-HA-Qho" firstAttribute="height" secondItem="3sK-VF-M2k" secondAttribute="height" multiplier="0.3" id="Ewy-AW-83U"/>
+                            <constraint firstItem="3sK-VF-M2k" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="G4w-Oi-cPD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZdX-HA-Qho" secondAttribute="bottom" constant="10" id="GCs-Mh-hL5"/>
+                            <constraint firstItem="3sK-VF-M2k" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GRb-3H-8Xa"/>
+                            <constraint firstItem="ZdX-HA-Qho" firstAttribute="width" secondItem="3sK-VF-M2k" secondAttribute="width" multiplier="0.3" id="djd-VL-LJD"/>
+                            <constraint firstItem="3sK-VF-M2k" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.6" id="fVu-3S-521"/>
+                            <constraint firstItem="ZdX-HA-Qho" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="s7M-TV-TGp"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -22,4 +44,11 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="런치스크린" width="842" height="595"/>
+        <image name="런치스크린_우아한형제들" width="2000" height="522"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
